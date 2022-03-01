@@ -51,7 +51,7 @@ body {
   /* opacity: 0.5; */
 }
 .risk-low::before {
-  content: "低风险：";
+  content: "低：";
 }
 
 .risk-medium {
@@ -59,14 +59,14 @@ body {
 }
 
 .risk-medium::before {
-  content: "中风险：";
+  content: "中：";
 }
 
 .risk-high {
   background-color: lightcoral;
 }
 .risk-high::before {
-  content: "高风险："; 
+  content: "高："; 
 }
 
 .item-comment {
