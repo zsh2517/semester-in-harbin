@@ -36,6 +36,39 @@ body {
   content: "开放：";
 }
 
+.risk-item {
+  font-size: small;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 3px;
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+
+/* 低风险地区（目前用不到） */
+.risk-low {
+  background-color: lightgreen;
+  /* opacity: 0.5; */
+}
+.risk-low::before {
+  content: "低风险：";
+}
+
+.risk-medium {
+  background-color: lightyellow;
+}
+
+.risk-medium::before {
+  content: "中风险：";
+}
+
+.risk-high {
+  background-color: lightcoral;
+}
+.risk-high::before {
+  content: "高风险："; 
+}
+
 .item-comment {
     font-size: small;
     display: inline-block;
