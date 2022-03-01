@@ -33,7 +33,7 @@ body {
 }
 
 .status-open::before {
-  content: "开放：";
+  content: "解封：";
 }
 
 .risk-item {
