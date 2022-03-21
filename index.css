@@ -66,13 +66,13 @@ body {
   background-color: lightcoral;
 }
 .risk-high::before {
-  content: "高："; 
+  content: "高：";
 }
 
 .item-comment {
-    font-size: small;
-    display: inline-block;
-    margin-left: 2em;
+  font-size: small;
+  display: inline-block;
+  margin-left: 2em;
 }
 
 .item-month {
@@ -80,6 +80,14 @@ body {
   text-align: center;
   border: none !important;
   border-bottom: 2px dashed #aaa !important;
+}
+
+.item-title {
+  font-size: xx-large;
+  text-align: center;
+  border: none !important;
+  border-bottom: 2px dashed #aaa !important;
+  border-bottom-width: 4px !important;
 }
 
 .item {
