@@ -115,9 +115,22 @@ const Month = (props) => {
 
 const month = status.data.map((val) => <Month {...val} />);
 
+let description;
+switch(status.data[0].items[0].status) {
+  case "test":
+      description = "没有，核酸 +1";
+      break;
+    case "close":
+      description = "没有，封校 ing";
+      break;
+    default:
+      description = "好耶，解封了！";
+      break;
+}
+
 ReactDOM.render(
   <>
-    <Header overall={status.overall} />
+    <Header overall={description} />
     {month}
     <Example />
     <Footer updated={status.lastUpdated} />
