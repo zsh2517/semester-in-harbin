@@ -1,19 +1,37 @@
 {
     "revison": 20220318,
-    "lastUpdated": "2022-03-16 17:15",
+    "lastUpdated": "2022-03-25 17:15",
     "overall": "没有，封校 ing",
     "data": [
         {
             "month": "2022-03",
             "items": [
                 {
+                    "date": "2022-03-24",
+                    "status": "close",
+                    "describe": "",
+                    "links": null,
+                    "risksLow": null,
+                    "risksMedium": [
+                        "南岗区清明四道街168-2号",
+                        "道外区卫星路38号、宝宇天邑澜山小区、宝宇天邑澜湾小区、景阳街365号景阳世家小区、北十七道街53号院",
+                        "道里区一面街40号、新华街128号、巡船胡同18号、康安路44号",
+                        "五常市拉林镇富力广场小区",
+                        "尚志市亚布力镇"
+                    ]
+                },
+                {
                     "date": "2022-03-23",
                     "status": "close",
                     "describe": "",
                     "links": [
                         {
-                            "link": "",
-                            "text": ""
+                            "link": "https://mp.weixin.qq.com/s/M466-9c1o5OIyrEOMIsUzQ",
+                            "text": "黑龙江省最新疫情通报"
+                        },
+                        {
+                            "link": "https://mp.weixin.qq.com/s/sZegf8pTHEvTvqGWOvao_A",
+                            "text": "3月23日0-24时疫情通报"
                         }
                     ],
                     "risksLow": null,
