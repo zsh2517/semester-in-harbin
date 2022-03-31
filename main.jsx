@@ -10,7 +10,7 @@ const status = await (await fetch("status.json")).json();
 const Header = (props) => (
   <div className="item item-title">
     <div style={{ fontWeight: "bold", display: "inline-block" }}>
-      #今天学校解封了吗？
+      #今天学校没有解封吗？
     </div>
     <div style={{ display: "inline-block" }}>{props.overall}</div>
   </div>
@@ -20,9 +20,9 @@ const Example = () => (
   <div className="item" style={{ textAlign: "center" }}>
     <div style={{ fontSize: "x-large" }}>图例</div>
     <div style={{ display: "flex" }}>
-      <div className="item status-open">好耶，解封了！</div>
-      <div className="item status-clse">还在封校...</div>
-      <div className="item status-test">核酸检测，捅嗓子 ++</div>
+      <div className="item status-test">不是</div>
+      <div className="item status-clse">是的</div>
+      <div className="item status-open">核酸检测，捅嗓子 ++</div>
     </div>
     <div className="risk-item risk-low">地区全域低风险</div>
     <div className="risk-item risk-medium">地区内存在中风险</div>
@@ -64,11 +64,11 @@ const RiskMedium = (props) => (
 const getClassNameByStatus = (status) => {
   switch (status) {
     case "test":
-      return "item status-test";
+      return "item status-open";
     case "close":
       return "item status-clse";
     default:
-      return "item status-open";
+      return "item status-test";
   }
 };
 
@@ -118,13 +118,13 @@ const month = status.data.map((val) => <Month {...val} />);
 let description;
 switch(status.data[0].items[0].status) {
   case "test":
-      description = "没有，核酸 +1";
+      description = "是的，核酸 +1";
       break;
     case "close":
-      description = "没有，封校 ing";
+      description = "是的，封校 ing";
       break;
     default:
-      description = "好耶，解封了！";
+      description = "不是，解封了...";
       break;
 }
 

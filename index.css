@@ -25,7 +25,7 @@ body {
 }
 
 .status-test::before {
-  content: "核酸：";
+  content: "解封：";
 }
 
 .status-clse::before {
@@ -33,7 +33,7 @@ body {
 }
 
 .status-open::before {
-  content: "解封：";
+  content: "核酸：";
 }
 
 .risk-item {
@@ -47,7 +47,7 @@ body {
 
 /* 低风险地区（目前用不到） */
 .risk-low {
-  background-color: lightgreen;
+  background-color: lightcoral;
   /* opacity: 0.5; */
 }
 .risk-low::before {
@@ -63,7 +63,7 @@ body {
 }
 
 .risk-high {
-  background-color: lightcoral;
+  background-color: lightgreen;
 }
 .risk-high::before {
   content: "高：";
