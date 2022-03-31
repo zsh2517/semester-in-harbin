@@ -12,7 +12,7 @@ body {
 }
 
 .status-test {
-  background-color: lightcoral;
+  background-color: lightgreen;
 }
 
 /* 封闭管理 */
@@ -21,7 +21,7 @@ body {
 }
 
 .status-open {
-  background-color: lightgreen;
+  background-color: lightcoral;
 }
 
 .status-test::before {
@@ -47,7 +47,7 @@ body {
 
 /* 低风险地区（目前用不到） */
 .risk-low {
-  background-color: lightgreen;
+  background-color: lightcoral;
   /* opacity: 0.5; */
 }
 .risk-low::before {
@@ -63,7 +63,7 @@ body {
 }
 
 .risk-high {
-  background-color: lightcoral;
+  background-color: lightgreen;
 }
 .risk-high::before {
   content: "高：";
