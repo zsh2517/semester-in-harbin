@@ -10,7 +10,7 @@ const status = await (await fetch("status.json")).json();
 const Header = (props) => (
   <div className="item item-title">
     <div style={{ fontWeight: "bold", display: "inline-block" }}>
-      #今天学校解封了吗？
+      #今天学校没有解封吗？
     </div>
     <div style={{ display: "inline-block" }}>{props.overall}</div>
   </div>
@@ -121,7 +121,7 @@ const month = status.data.map((val) => <Month {...val} />);
 let description;
 switch(status.data[0].items[0].status) {
   case "test":
-      description = "没有，核酸 +1";
+      description = "是的，核酸 +1";
       break;
     case "close":
       description = "没有，封校 ing";
@@ -135,7 +135,7 @@ ReactDOM.render(
   <>
     <Header overall={description} />
     {month}
-    <Example />
+    {/* <Example /> */}
     <Footer updated={status.lastUpdated} />
   </>,
   document.getElementById("root")

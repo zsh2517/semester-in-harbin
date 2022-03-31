@@ -17,7 +17,7 @@ body {
 
 /* 封闭管理 */
 .status-clse {
-  background-color: lightyellow;
+  background-color: lightgreen;
 }
 
 .status-open {
@@ -55,7 +55,7 @@ body {
 }
 
 .risk-medium {
-  background-color: lightyellow;
+  background-color: lightgreen;
 }
 
 .risk-medium::before {
@@ -63,7 +63,7 @@ body {
 }
 
 .risk-high {
-  background-color: lightgreen;
+  background-color: lightyellow;
 }
 .risk-high::before {
   content: "高：";
