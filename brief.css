@@ -1,0 +1,108 @@
+html,
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  background-color: #f5f5f5;
+  box-sizing: border-box;
+  padding: 40px 20px;
+}
+
+.container-month {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+}
+
+.status-test {
+  background-color: lightcoral;
+}
+
+/* 封闭管理 */
+.status-clse {
+  background-color: lightyellow;
+}
+
+.status-open {
+  background-color: lightgreen;
+}
+
+.status-test::before {
+  content: "核酸：";
+}
+
+.status-clse::before {
+  content: "封校：";
+}
+
+.status-open::before {
+  content: "解封：";
+}
+
+.risk-item {
+  font-size: small;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 3px;
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+
+/* 低风险地区（目前用不到） */
+.risk-low {
+  background-color: lightgreen;
+  /* opacity: 0.5; */
+}
+.risk-low::before {
+  content: "低：";
+}
+
+.risk-medium {
+  background-color: lightyellow;
+}
+
+.risk-medium::before {
+  content: "中：";
+}
+
+.risk-high {
+  background-color: lightcoral;
+}
+.risk-high::before {
+  content: "高：";
+}
+
+.item-comment {
+  font-size: small;
+  display: inline-block;
+  margin-left: 2em;
+}
+
+.item-month {
+  font-size: x-large;
+  text-align: center;
+  border: none !important;
+  border-bottom: 2px dashed #aaa !important;
+  width: 100%!important;
+}
+
+.item-title {
+  font-size: xx-large;
+  text-align: center;
+  border: none !important;
+  border-bottom: 2px dashed #aaa !important;
+  border-bottom-width: 4px !important;
+  width: 100%!important;
+}
+
+.item {
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 10px 1.5%;
+  width: 22%;
+  border: 2px solid #ccc;
+}
