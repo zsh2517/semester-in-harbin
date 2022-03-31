@@ -60,6 +60,11 @@ const RiskMedium = (props) => (
     <div class="risk-item risk-medium">{props.name}</div>{" "}
   </>
 );
+const RiskHigh = (props) => (
+  <>
+    <div class="risk-item risk-high">{props.name}</div>{" "}
+  </>
+);
 
 const getClassNameByStatus = (status) => {
   switch (status) {
@@ -89,6 +94,10 @@ const Details = (props) => {
     ? props.risksMedium.map((val) => <RiskMedium name={val} />)
     : [];
 
+    const riskHigh = props.risksHigh
+    ? props.risksHigh.map((val) => <RiskHigh name={val} />)
+    : [];
+
   const className = getClassNameByStatus(props.status);
   return (
     <div className={className}>
@@ -98,6 +107,7 @@ const Details = (props) => {
         {links}
         {riskLow}
         {riskMedium}
+        {riskHigh}
       </div>
     </div>
   );
