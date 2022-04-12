@@ -10,16 +10,7 @@
                     "date": "2022-04-13",
                     "status": "close",
                     "describe": "",
-                    "links": [
-                        {
-                            "link": "",
-                            "text": ""
-                        },
-                        {
-                            "link": "",
-                            "text": ""
-                        }
-                    ],
+                    "links": [],
                     "risksLow": null,
                     "risksMedium": [],
                     "risksHigh": null
@@ -30,12 +21,8 @@
                     "describe": "【16】（抽检）",
                     "links": [
                         {
-                            "link": "",
-                            "text": ""
-                        },
-                        {
-                            "link": "",
-                            "text": ""
+                            "link": "https://mp.weixin.qq.com/s/ucljqqSXsEQ-GHCnj7YfqQ",
+                            "text": "省教育厅召开全省普通高校疫情防控视频调度会@黑龙江省教育厅"
                         }
                     ],
                     "risksLow": null,
